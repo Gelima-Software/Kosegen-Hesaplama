@@ -1,0 +1,25 @@
+
+<meta charset="utf-8">
+<link rel="icon" href="kh.png">
+<title>Köşegen Hesaplama</title>
+<script>
+  function hspl() {
+    var ks = document.getElementById('giris').value;
+  var adimbir = ks-"3";
+  var adimiki = adimbir*ks;
+  var adimuc = adimiki/"2";
+    document.getElementById('cikti').innerHTML = "Köşegen Sayısı: "+adimuc;
+  }
+    function uyg() {
+window.open("#", "", "width=500, height=300")
+  }
+      function kod() {
+      document.getElementById('kodlar').style = "display: block;"
+  }
+</script>
+  <center>
+  <span>Kenar Sayısını:</span>
+ <input type="text" id="giris"> 
+  <button id="hesapla" onclick="hspl()">Hesapla</button>
+  <br>
+  <div id="cikti"></div>
